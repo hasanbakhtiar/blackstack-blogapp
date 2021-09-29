@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+.contact {
+    position: relative;
+    width: 100%;
+    // height: 190vh;
+    overflow-x: hidden;
+    background-color: #111827;
+   
+
+    .contact-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 400px;
+        background-color: rgb(31,41,55);
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 7rem;
+        padding-top: 5rem;
+        max-width: 1536px;
+        padding-right: 128px;
+        padding-left: 128px;
+       
+
+        .contact-header {
+            max-width: 42rem;
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto;
+           
+
+            h2 {
+                line-height: 115%;
+                color: rgb(243,244,246);
+                font-size: 3vw;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            span {
+                color: rgb(229,231,235);
+                font-size: 1vw;
+                line-height: 1.5rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                margin-top: .5rem;
+            }
+        }
+
+        .contact-box {
+            padding: 4rem;
+            margin-top: 5rem;
+            background-color: rgb(17,24,39);
+            border-radius: 40px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+
+            .contact-inner {
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: repeat(2,minmax(0,1fr));
+
+                .first-item {
+                    max-width: 24rem;
+
+                   .email, .phone, .social-icons {
+                       margin-top: 1.5rem;
+                   }
+
+                   .address, .email, .phone, .social-icons {
+
+                    h3 {
+                        color: rgb(229,231,235);
+                        letter-spacing: .05em;
+                        font-weight: 600;
+                        font-size: .875vw;
+                        line-height: 1.25rem;
+                        margin: 0;
+                        font-family: 'Poppins', sans-serif;
+                    }
+
+                    span {
+                        display: block;
+                        margin-top: .5rem;
+                        color: rgb(156,163,175);
+                        font-family: 'Poppins', sans-serif;
+
+                    }
+
+                    .social-elements {
+                        cursor: pointer;
+                        color: rgb(209,213,219);
+                        font-size: 1.3vw;
+                        line-height: 2rem;
+                        margin-top: .5rem;
+                        display: flex;
+                       
+
+                        .element {
+                            padding-right: 15px;
+                            display: block;
+                            color: inherit;
+                            text-decoration: inherit;
+                        }
+                    }
+                   }
+                }
+
+                .second-item {
+
+                    form {
+                        font-family: 'Poppins', sans-serif;
+                      display: grid;
+                      gap: 1.5rem;
+                      grid-template-columns: repeat(1,minmax(0,1fr));
+
+                      label {
+                          display: block;
+
+                          span {
+                              display: block;
+                              color: rgb(209,213,219);
+                              font-weight: 600;
+                              font-size: .88vw;
+                              line-height: 1.25rem;
+                          }
+
+                          input {
+                              color: rgb(209,213,219);
+                              display: block;
+                              font-weight: 400;
+                              font-size: .875vw;
+                              line-height: 1.25rem;
+                              background-color: rgb(17,24,39);
+                              border: 1px solid rgb(55,65,81);
+                              padding-top: .75rem;
+                              padding-bottom: .75rem;
+                              padding-left: 1rem;
+                              padding-right: 1rem;
+                              width: 100%;
+                              height: 2.75rem;
+                              margin-top: .25rem;
+                              border-radius: 999px;
+                              outline: none;
+
+                              &:focus {
+                                border: 1px solid rgb(55,65,81);
+                                box-shadow: 0 0 0 0.2rem rgba(79,70, 229,0.25);
+                            }
+                          }
+
+                          textarea {
+                            color: rgb(209,213,219);
+                            display: block;
+                            border-radius: .75rem;
+                            width: 100%;
+                            font-weight: 400;
+                            font-size: .875vw;
+                            line-height: 1.25rem;
+                            padding: .5rem .75rem;
+                            background-color: rgb(17,24,39);
+                            border: 1px solid rgb(55,65,81);
+                            margin-top: .25rem;
+                            outline: none;
+
+                            &:focus {
+                                border: 1px solid rgb(55,65,81);
+                                box-shadow: 0 0 0 0.2rem rgba(79,70, 229,0.25);
+                            }
+
+                          }
+                        }
+
+                        .send {
+                            position: relative;
+                            font-size: 1vw;
+                            line-height: 1.5rem;
+                            padding-left: 1.5rem;
+                            padding-right: 1.5rem;
+                            color: rgb(249,250,251);
+                            font-weight: 500;
+                            padding-top: .75rem;
+                            padding-bottom: .75rem;
+                            background-color: rgb(79,70,229);
+                            height: auto;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 999px;
+                            cursor: pointer;
+                            border: none;
+                            transition: .3s;
+
+
+                            &:hover {
+                                transition: .3s;
+                                background-color: rgb(67,56,202);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
