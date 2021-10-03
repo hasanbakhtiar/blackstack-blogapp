@@ -2,7 +2,7 @@ import React from 'react'
 import BlogForm from './BlogForm';
 import {connect} from 'react-redux';
 import {addBlog} from '../actions/blogs';
- 
+import Footer from './Footer';
 const AddBlogPage = (props) => {
     return (
         <div className="about">
@@ -15,7 +15,7 @@ const AddBlogPage = (props) => {
                     </div>
                 </div>
                 <div className="itemsler col-lg-12 col-md-6 col-sm-3 ">
-            <h1>Add Blog</h1>
+            <h1 style={{color:"#fff"}}>Add Blog</h1>
             <BlogForm onSubmit={(blog) => {
                 props.dispatch(addBlog(blog));
                 props.history.push('/blogs');
@@ -24,6 +24,7 @@ const AddBlogPage = (props) => {
 </div>
                 </div>
             </div>
+            <Footer />
         </div>
         
     )
